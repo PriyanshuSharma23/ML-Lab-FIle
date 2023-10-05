@@ -1,0 +1,123 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Lab File Links</title>
+</head>
+
+<body>
+
+    <h1>Machine Learning Experiments</h1>
+    <p>Links: </p>
+    <ul data-tags="">
+        <li><a href="/outputs/1-factorial.html">Write a Program in Python to compute the factorial of any given
+                number.</a></li>
+        <li><a href="/outputs/2-numbers.html">Write a Program in Python to convert: - Binary to Decimal- Decimal to
+                Binary...</a></li>
+        <li><a href="/outputs/3-mean-med-mode.html">Write a program to compute the:- Mean - Mode - Median - Standard
+                Deviation</a></li>
+        <li><a href="/outputs/4-uni-multi-analysis.html">WAP to represent a data set and its single variate/
+                multi-variate plots.</a></li>
+        <li><a href="/outputs/5-plots.html">WAP to plot a horizontal and vertical bar plot using python. Change the
+                color of each bar also.</a></li>
+        <li><a href="/outputs/6-naive-bayes.html">Implement Naïve Bayes theorem to classify the English text.</a></li>
+    </ul>
+
+    <script>
+        let files = [
+            '1-factorial.html',
+            '2-numbers.html',
+            '3-mean-med-mode.html',
+            '4-uni-multi-analysis.html',
+            '5-plots.html',
+            '6-naive-bayes.html'
+        ]
+        let names = [
+            'Write a Program in Python to compute the factorial of any given number.',
+            'Write a Program in Python to convert: - Binary to Decimal- Decimal to Binary...',
+            'Write a program to compute the:- Mean - Mode - Median - Standard Deviation',
+            'WAP to represent a data set and its single variate/ multi-variate plots.',
+            'WAP to plot a horizontal and vertical bar plot using python. Change the color of each bar also.',
+            'Implement Naïve Bayes theorem to classify the English text.',
+        ]
+
+        let aTags = []
+        for (let i = 0; i < files.length; i++) {
+            let li = document.createElement('li');
+            let a = document.createElement('a');
+            a.href = '/outputs/' + files[i]
+            a.innerText = names[i]
+            li.appendChild(a)
+            aTags.push(li)
+        }
+
+        document
+            .querySelector('[data-tags]')
+            .innerHTML = aTags.map(tag => tag.outerHTML).join(' ')
+
+
+    </script>
+
+
+
+</body>
+
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Lab File Links</title>
+</head>
+
+<body>
+
+    <h1>Machine Learning Experiments</h1>
+    <p>Links: </p>
+    <ul data-tags>
+
+    </ul>
+
+    <script>
+        let files = [
+            '1-factorial.html',
+            '2-numbers.html',
+            '3-mean-med-mode.html',
+            '4-uni-multi-analysis.html',
+            '5-plots.html',
+            '6-naive-bayes.html'
+        ]
+        let names = [
+            'Write a Program in Python to compute the factorial of any given number.',
+            'Write a Program in Python to convert: - Binary to Decimal- Decimal to Binary...',
+            'Write a program to compute the:- Mean - Mode - Median - Standard Deviation',
+            'WAP to represent a data set and its single variate/ multi-variate plots.',
+            'WAP to plot a horizontal and vertical bar plot using python. Change the color of each bar also.',
+            'Implement Naïve Bayes theorem to classify the English text.',
+        ]
+
+        let aTags = []
+        for (let i = 0; i < files.length; i++) {
+            let li = document.createElement('li');
+            let a = document.createElement('a');
+            a.href = '/outputs/' + files[i]
+            a.innerText = names[i]
+            li.appendChild(a)
+            aTags.push(li)
+        }
+
+        document
+            .querySelector('[data-tags]')
+            .innerHTML = aTags.map(tag => tag.outerHTML).join(' ')
+
+
+    </script>
+
+</body>
+
+</html> -->
